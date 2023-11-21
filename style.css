@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  background-color: #7cdaef;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  height: 180vh;
+  width: 90%;
+}
+
+.container-main {
+  flex-basis: 60%;
+  background-color: rgba(14, 73, 126, 0.7);
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 14vh 6vh 0 6vh;
+}
+
+p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 2vh 6vh 0 6vh;
+}
+
+h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 2vh 6vh 6vh 6vh;
+}
+
+.ico-container {
+  margin: 0 6vh 0 6vh;
+}
+
+.footer {
+  position: fixed;
+  top: 86vh;
+  width: 100vw;
+  height: 15vh;
+  background-image: url("./img/grass.png");
+  background-repeat: repeat-x;
+}
+
+.cloud {
+  position: absolute;
+}
+
+.top {
+  z-index: 1;
+  top: 13%;
+  left: 63%;
+}
+
+.middle {
+  z-index: -1;
+  top: 40%;
+  left: 8%;
+}
+
+.bottom {
+  z-index: -1;
+  top: 65%;
+  left: 63%;
+}
