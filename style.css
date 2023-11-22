@@ -56,7 +56,7 @@ h2 {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 19vh;
+  height: 14vh;
   background-image: url("./img/grass.png");
   background-repeat: repeat-x;
 }
@@ -81,4 +81,38 @@ h2 {
   z-index: -1;
   top: 65%;
   left: 63%;
+}
+
+@keyframes cloudAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.top,
+.middle,
+.bottom {
+  animation: cloudAnimation 4s infinite;
+}
+
+@keyframes grassAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  animation: grassAnimation 3s infinite;
 }
